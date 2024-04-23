@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input [(ngModel)]="name" matInput placeholder="Name" type="text" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Weight</mat-label>
+    <input [(ngModel)]="weight" matInput placeholder="Weight" type="number" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Age</mat-label>
+    <input [(ngModel)]="age" matInput value="0" type="number" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>height</mat-label>
+    <input [(ngModel)]="height" matInput placeholder="Height" type="number" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button class="button" (click)="handleSumbit()">submit</button>
+  <button mat-button class="button button-danger" mat-dialog-close>
+    Close
+  </button>
+</div>
